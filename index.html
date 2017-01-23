@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--Assignment Information
+	David Allen
+	Project 2, AJAX Online
+	Mar 26, 2015
+-->
+
+<!--Document Information
+	This HTML document is a burrito entry form for a customer to select 
+	and what kind of burrito they would like.  When they are done, they 
+	add the burrito to the order below.
+-->
+
+<html>
+ <head>
+  <title>Project 2</title>
+  <script type="text/javascript" src="burritoAjax.js"></script>
+ </head>
+ <body>
+		<table>
+			<tr>
+				<td><label class ="label">Choose your burrito: </label></td>
+				<td>
+					<select id="typeDropdown">
+						<option value="Chicken">Chicken - $6.20</input>
+						<option value="Steak">Steak - $6.75</input>
+						<option value="Carnitas">Carnitas - $6.60</input>
+						<option value="Barbacoa">Barbacoa - $6.60</input>
+						<option value="Vegetarian">Vegetarian - $6.20</input>				
+					</input>
+				</td>
+			</tr>
+			<tr>
+				<td><label class ="label">Select a rice: </label></td>
+				<td>
+					<input type="radio" id="whiteRiceRadio" name="riceRadio" value="White Rice" checked>White</input>
+					<input type="radio" id="brownRiceRadio" name="riceRadio" value="Brown Rice">Brown</input>
+				</td>
+			</tr>
+			<tr>
+				<td><label class ="label">Which type of beans: </label></td>
+				<td>
+					<input type="radio" id="pintoBeansRadio" name="beansRadio" value="Pinto Beans" checked>Pinto Beans</input>
+					<input type="radio" id="blackBeansRadio" name="beansRadio" value="Black Beans">Black Beans</input>
+				</td>
+			</tr>
+			<tr>
+				<td><label class ="label">Chooses Salsa(s): </label></td>
+				<td>
+					<input type="checkbox" id="picoCheckbox" name="salsaCheckbox" value="Pico De Gallo">Pico De Gallo</input>
+					<input type="checkbox" id="cornCheckbox" name="salsaCheckbox" value="Roasted Corn">Roasted Corn</input>
+					<input type="checkbox" id="tomatGreenCheckbox" name="salsaCheckbox" value="Tomatillo - Green">Tomatillo - Green</input>
+					<input type="checkbox" id="tomatRedCheckbox" name="salsaCheckbox" value="Tomatillo - Red" >Tomatillo - Red</input>
+				</td>
+			</tr>
+			<tr>
+				<td><label id="addressLabel" class ="label">Add Guacamole $1.40 </label></td>
+				<td>
+					<input type="checkbox" id="guacamoleCheckbox" name="guacamoleCheckbox" value="addGuac" />
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input id="addBurrito" type="button" value="add burrito to order" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+		</table>
+	<h4>Total Cost: </h4><div id="totalCost"></div>
+	<div id="output">
+		
+	</div>
+ </body>
+</html>
+
+<script>
+	init();
+</script>
